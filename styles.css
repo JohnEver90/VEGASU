@@ -1,0 +1,143 @@
+/*Estilos basicos de la pagina*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #031945;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+
+.logo img {
+    width: 110px; /* Ajusta el ancho de tu logo según sea necesario */
+}
+
+header p {
+    padding: 0;
+    color: #000000;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+nav {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+}
+
+nav a {
+    color: #151a75; /* Color del texto */
+    text-decoration: none;
+    margin: 0 10px; /* Márgenes entre los enlaces */
+    font-size: 1em;
+    transition: color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
+}
+
+nav a:hover {
+    color: #fc770d; /* Color del texto al hacer hover */
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 0.5em;
+    text-align: center;
+}
+
+/*Mis modificciones*/
+.catalogo-container {
+    margin-top: 25px;
+    padding: 25px;
+    text-align: center;
+}
+
+p {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+#contacto p{
+    text-align: center;
+}
+
+
+/* seccion de botones de redes */
+.buttons {
+    min-width: 500px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #031945;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+    color:#fc770d;
+  }
+
+h2{
+    background-color: #fc770d;
+    text-align:center;
+    color: #ffffff;
+    font-size: 2em;
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.catalogo-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none;
+    border: 2px solid #007bff; /* Borde del botón */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.catalogo-button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+    border-color: #0056b3; /* Cambia el color del borde al pasar el ratón */
+}
+
+
