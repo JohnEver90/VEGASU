@@ -47,7 +47,7 @@ nav {
 nav a {
     color: #151a75; /* Color del texto */
     text-decoration: none;
-    margin: 0 10px; /* Márgenes entre los enlaces */
+    margin: 0 1em; /* Márgenes entre los enlaces */
     font-size: 1em;
     transition: color 0.3s ease-in-out; /* Transición de color al pasar el ratón */
 }
@@ -71,15 +71,31 @@ footer p{
 }
 
 /*Mis modificciones*/
+
+/*media querie para pantallas pequeñas*/
+@media (max-width: 768px) {
+    /* Estilos para pantallas pequeñas */
+    body {
+        overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+
+    /* Utiliza flexbox para organizar elementos verticalmente */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .catalogo-container {
-    margin-top: 25px;
-    padding: 25px;
+    margin-top: 1.8em;
+    padding: 1.8em;
     text-align: center;
 }
 
 p {
     color: #ffffff;
-    padding: 15px;
+    padding: 1em;
     font-size: 1.5em;
 }
 
@@ -134,17 +150,17 @@ h2, p {
 
 /* seccion de botones de redes */
 .buttons {
-    min-width: 500px;
+    min-width: 30em;
     display: flex;
     justify-content: space-around;
   }
   
   .buttons a {
     text-decoration: none;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 1.25em;
+    width: 2.8em;
+    height: 2.8em;
+    line-height: 2.8em;
     text-align: center;
     background: #031945;
     color: #f1f1f1;
@@ -163,15 +179,15 @@ h2{
     text-align:center;
     color: #ffffff;
     font-size: 2em;
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 5px;
+    border-radius: 0.5em; /* Esquinas redondeadas */
+    padding: 0.5em;
     margin: auto;
     text-align: center;
 }
 
 .catalogo-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.8em 1.25em;
     background-color: #007bff; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     text-decoration: none;
