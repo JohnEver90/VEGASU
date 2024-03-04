@@ -14,3 +14,29 @@ function nextImage() {
 }
 
 setInterval(nextImage, 4000);
+
+/*efecto carousel de logo de marcas*/
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.getElementById('carousel');
+
+    // Clona el contenido del carrusel para el efecto infinito
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+    carousel.innerHTML += carousel.innerHTML;
+
+    // Función para detener el desplazamiento infinito al pasar el ratón sobre el carrusel
+    carousel.addEventListener('mouseenter', () => {
+        carousel.style.animationPlayState = 'paused';
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+        carousel.style.animationPlayState = 'running';
+    });
+});

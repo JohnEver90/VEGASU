@@ -1,7 +1,0 @@
-function hoverProduct(element) {
-    element.classList.add('hovered');
-}
-
-function unhoverProduct(element) {
-    element.classList.remove('hovered');
-}

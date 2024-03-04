@@ -15,6 +15,7 @@ body {
 header {
     position: sticky;
     top: 0;
+    height: 6em;
     width: 100%;
     text-align: center;
     z-index: 1000;
@@ -60,10 +61,80 @@ section {
     padding: 2em;
 }
 
+/*carousel de logos de marcas */
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%; /* Ajusta el ancho del carrusel según tus necesidades */
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+.carousel img {
+    width: 100%;
+    height: 6em;
+    max-width: 40em; /* Ajusta el tamaño de las imágenes según tus necesidades */
+    margin-right: 3em; /* Espaciado entre las imágenes */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*seccion de contacto*/
+#contacto {
+    background-color: #031945;
+    padding: 50px 0;
+}
+
+.contacto-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 600px;
+}
+
+.informacion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.informacion p{        
+    font-size: 1.20em;
+}
+
+.telefono,
+.correo {
+    padding: 1em;
+}
+
+.telefono h3,
+.correo h3 {
+    color: #ffffff;
+}
+
 footer {
     background: #ffffff;
-    padding: 0.5em;
+    padding: 0;
     text-align: center;
+    font-size: 0.60em;
 }
 
 footer p{
@@ -103,14 +174,14 @@ p {
     text-align: center;
 }
 
-#nosotros{
+#presentacion{
     text-align: center;
 }
 
 /*slider inicio*/
-#nosotros {
+#presentacion {
     position: relative;
-    height: 100vh;
+    height: 75vh;
     text-align: center;
     color: #fff;
 }
@@ -155,7 +226,7 @@ h2, p {
     justify-content: space-around;
   }
   
-  .buttons a {
+.buttons a {
     text-decoration: none;
     font-size: 1.25em;
     width: 2.8em;
@@ -169,7 +240,7 @@ h2, p {
     transition: all .4s ease-in-out;
   }
   
-  .buttons a:hover {
+.buttons a:hover {
     transform: scale(1.2);
     color:#fc770d;
   }
@@ -178,7 +249,7 @@ h2{
     background-color: #fc770d;
     text-align:center;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 1.25em;
     border-radius: 0.5em; /* Esquinas redondeadas */
     padding: 0.5em;
     margin: auto;
