@@ -219,6 +219,62 @@ h2, p {
     margin: 0;
 }
 
+#nosotros p{
+    color: #000000;
+    text-align: center;
+}
+
+/*Seccion nosotros*/
+#nosotros {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contenido {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen-derecha,
+.imagen-izquierda {
+    flex: 1;
+    text-align: center;
+}
+
+.imagen-derecha img,
+.imagen-izquierda img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.texto-derecha,
+.texto-izquierda {
+    flex: 1;
+    padding: 20px;
+}
+
+.texto-derecha h2,
+.texto-izquierda h2 {
+    color: #000000;
+}
+
+.texto-derecha p,
+.texto-izquierda p {
+    color: #000000;
+}
+
+/* Efecto de zoom al pasar el ratón sobre la imagen */
+.imagen-derecha img:hover,
+.imagen-izquierda img:hover {
+    transform: scale(1.1);
+}
+
 /* seccion de botones de redes */
 .buttons {
     min-width: 30em;
